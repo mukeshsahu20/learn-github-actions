@@ -5,7 +5,6 @@ jobs:
   Test1:
     concurrency:
       group: demo
-      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
