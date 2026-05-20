@@ -1,4 +1,4 @@
-name: example04
+name: example05
 on: [push]
 jobs:
   # Sequential Jobs
