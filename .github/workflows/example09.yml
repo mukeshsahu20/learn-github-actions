@@ -1,0 +1,28 @@
+name: example09
+on: [workflow_dispatch]
+
+jobs:
+  Test1:
+    concurrency:
+      group: demo
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: sleep 10
+  Test2:
+    concurrency:
+      group: demo
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: sleep 5
+  Test3:
+    concurrency:
+      group: demo
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: sleep 10
