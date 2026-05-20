@@ -1,5 +1,5 @@
 name: Cart CI
-on: [push]
+on: [push,workflow_dispatch]
 jobs:
   common:
     uses: mukeshsahu20/github-actions-reusable/.github/workflows/ci.yml@main
