@@ -1,0 +1,4 @@
+name:
+on: push
+jobs:
+  Code Checks:
