@@ -2,4 +2,4 @@ name: Cart CI
 on: [push]
 jobs:
   common:
-    uses: mukeshsahu20/github-actions-reusable/.github/workflows/ci.yml@main
+    uses: mukeshsahu20/github-actions-reusable/.github/workflows/ci.yaml@main
