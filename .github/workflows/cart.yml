@@ -1,12 +1,13 @@
 name: Cart CI
-on: [push,workflow_dispatch]
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   common:
     uses: mukeshsahu20/github-actions-reusable/.github/workflows/ci.yml@main
     with:
-      component_name: cart
-
-
+      common_name: cart
 
 
 
