@@ -1,0 +1,9 @@
+name: Cart CI - Pull Request
+on: [push, workflow_dispatch]
+jobs:
+  common:
+    uses: mukeshsahu20/github-actions-reusable/.github/workflows/ci.yaml@main
+    with:
+      component_name: cart
+
+
